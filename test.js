@@ -1,12 +1,12 @@
 const restify = require('restify')
 const os = require('os')
 const server = restify.createServer()
-const requestTrackingHeaderFilter = require('./index')
+const requestTracingHeaderFilter = require('./index')
 
-server.pre(requestTrackingHeaderFilter())
+server.pre(requestTracingHeaderFilter())
 server.get('/healthCheck', healthCheck)
 function healthCheck (req, res, next) {
-  console.log(req.trackingHeaders)
+  console.log(req.tracingHeaders)
   res.send({hostname: os.hostname(), os: os.release()})
   return next()
 }

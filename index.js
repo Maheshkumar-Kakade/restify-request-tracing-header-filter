@@ -16,6 +16,6 @@ var DEFAULT_HEADERS = ['x-ot-span-context',
 module.exports = function (options) {
   let settings = Object.assign({}, options)
   settings.headersToFilter = settings.headersToFilter || DEFAULT_HEADERS
-  settings.requestProperty = 'trackingHeaders'
+  settings.requestProperty = 'tracingHeaders'
   return restifyRequestHeaderFilter(settings)
 }
