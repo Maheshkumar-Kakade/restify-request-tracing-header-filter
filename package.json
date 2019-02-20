@@ -1,0 +1,30 @@
+{
+  "name": "restify-request-tracking-header-filter",
+  "version": "0.0.1",
+  "description": "Restify request tracking header filter",
+  "main": "index.js",
+  "dependencies": {
+    "restify-request-header-filter": "0.0.1"
+  },
+  "devDependencies": {
+    "restify": "^7.7.0"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maheshkumar-Kakade/restify-request-tracking-header-filter.git"
+  },
+  "keywords": [
+    "tracking",
+    "header",
+    "restify"
+  ],
+  "author": "Maheshkumar Kakade <maheshkumarkakade@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maheshkumar-Kakade/restify-request-tracking-header-filter/issues"
+  },
+  "homepage": "https://github.com/Maheshkumar-Kakade/restify-request-tracking-header-filter#readme"
+}
